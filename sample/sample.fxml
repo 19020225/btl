@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="addword" layoutX="3.0" layoutY="75.0" mnemonicParsing="false" onAction="#addWord" prefHeight="31.0" prefWidth="64.0" text="Thêm" />
+      <Button fx:id="repair" layoutX="80.0" layoutY="75.0" mnemonicParsing="false" onAction="#Repair" text="Sửa" />
+      <Button fx:id="deleteEnglish" layoutX="147.0" layoutY="75.0" mnemonicParsing="false" onAction="#Delete" text="Xóa" />
+      <TextField fx:id="searchword" layoutX="2.0" layoutY="48.0" onAction="#textFieldSearch" onKeyReleased="#AutoCompleteTextfield" prefHeight="25.0" prefWidth="201.0" />
+      <Button fx:id="search" layoutX="203.0" layoutY="48.0" mnemonicParsing="false" onAction="#searchWord" text="Search" textFill="#01051cf2" />
+      <TextArea fx:id="wordexplain" layoutX="275.0" layoutY="98.0" prefHeight="478.0" prefWidth="247.0" />
+      <ListView fx:id="listview" layoutX="3.0" layoutY="99.0" onMouseClicked="#onMouseClickListview" prefHeight="478.0" prefWidth="255.0" />
+      <Pane layoutX="282.0" layoutY="581.0" prefHeight="0.0" prefWidth="268.0" />
+      <MenuBar layoutX="3.0" layoutY="4.0" prefHeight="32.0" prefWidth="524.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="331.0" layoutY="56.0" prefHeight="39.0" prefWidth="149.0" text="VietNamese" textFill="#05fab8">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
